@@ -3,6 +3,26 @@ class Main
   public static void main(String[] args) 
   {
     String [] words2 = {"apple", "banana", "peach", "cherries", "blueberries"};
+
+// for each loop printing each fruit
+
+    for(String fruit : words2)
+    {
+      System.out.print(fruit + " ");
+    }
+
+  System.out.println(" ");
+
+// for each loop printing only fruits with 5 letters
+    for(String fruit : words2)
+    {
+      if(fruit.length() == 5)
+      System.out.print(fruit + " ");
+    }
+
+    System.out.println(" ");
+    System.out.println(" ");
+
     for(int i = 0; i<words2.length; i++)
     {
       String first = words2[i].substring(0,1);
@@ -13,10 +33,10 @@ class Main
     System.out.println(" ");
     System.out.println(" ");
 
-    int [] nums = {12,65,80,70,34,22};
-
-// shifting elements to the right in order to replace a value in a position
+// insertion shifting elements to the right in order to replace a value in a position
 // you lose the last element in the array
+
+    int [] nums = {12,65,80,70,34,22};
 
     for(int i = nums.length-1; i>3; i--){
       nums[i] = nums[i-1];
@@ -107,7 +127,21 @@ class Main
       System.out.print(nums4[i] + " "); 
     }
 
-  }
+// using the for-each loop to find an average
+// here we also use the printf command. this is a way to print data in a specific format, like date and time or float and double
+
+int [] numss = {12, 65, 80, 70, 34, 22} ;
+int sum = 0 ;
+for (int x : numss)
+{
+  sum += x ; 
+}
+
+System.out.print("The average of nums is ");
+
+System.out.printf("%.1f%n",((double)sum/nums.length));
+
+  } 
 }  
 
 
