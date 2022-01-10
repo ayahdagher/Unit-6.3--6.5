@@ -127,6 +127,8 @@ class Main
       System.out.print(nums4[i] + " "); 
     }
 
+    System.out.println();
+
 // using the for-each loop to find an average
 // here we also use the printf command. this is a way to print data in a specific format, like date and time or float and double
 
@@ -137,10 +139,11 @@ for (int x : numss)
   sum += x ; 
 }
 
-System.out.print("The average of nums is ");
+System.out.print ("The average of nums is ");
 
 System.out.printf("%.1f%n",((double)sum/nums.length));
 
+// here, .1f represents how many decimal places we want on the output
   } 
 }  
 
